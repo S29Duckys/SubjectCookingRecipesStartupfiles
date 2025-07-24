@@ -1,6 +1,5 @@
-// Url Api 
-const UrlApi = "https://www.themealdb.com/api/json/v1/1/search.php"
-
+// Url Api
+const UrlApi = "https://www.themealdb.com/api/json/v1/1/search.php";
 
 // Image
 const Image = document.querySelector(".illustration");
@@ -8,42 +7,30 @@ const Image = document.querySelector(".illustration");
 // Title
 const Title = document.querySelector("#Title");
 
-// Vegetarien & Origine 
+// Vegetarien & Origine
 const Vg = document.querySelector("#Vg");
-const Origine = document.querySelector("#Origine")
+const Origine = document.querySelector("#Origine");
 
-// Ingredien 
+// Ingredien
 
-
-// Instruction 
+// Instruction
 
 
 // Video Ytb
-const VideoYtb = document.querySelector("#VideoYtb")
-
-
-
-
-
+const VideoYtb = document.querySelector("#VideoYtb");
 
 async function FetchApi() {
-	const res = await fetch(UrlApi)
-	const data = await res.json()
-	
-	console.log(data)
+  const res = await fetch(UrlApi);
+  const data = await res.json();
+
+  console.log(data);
+  let DataStrMeal = data.meals[0].strMeal;
 }
 
-FetchApi()
-
-
-
-
-
-
+FetchApi();
 
 // window.addEventListener("load", function () {
 
-	
 //   const card = document.createElement("div");
 //   card.id = "search-card";
 //   card.innerHTML = `<form id="form" class="card">
@@ -62,6 +49,3 @@ FetchApi()
 // 			</form>`;
 //   document.querySelector("main").appendChild(card);
 // });
-
-
-

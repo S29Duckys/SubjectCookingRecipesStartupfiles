@@ -4,9 +4,9 @@ async function FetchApi() {
 	const res = await fetch(UrlApi)
 	const data = await res.json()
 	
-	console.log(data)
+	// console.log(data)
 
-	let DataStrMeal = data.meals.strMeal
+	let DataStrMeal = data.meals[0].strMeal
 	console.log(DataStrMeal)
 }
 
