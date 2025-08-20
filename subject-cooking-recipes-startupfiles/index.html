@@ -30,23 +30,24 @@
 				</button>
 			</form>
 			-->
-			<section class="card">
+			<section id="CardMain" class="card">
 				<div
 					class="illustration"
+					id="illustration"
 					style="
 						background: center / cover no-repeat
 							url('https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg');
 					"
 				></div>
 				<div class="card-content">
-					<h1 class="text-preset-1">Spicy Arrabiata Penne</h1>
+					<h1 id="TitleMeal" class="text-preset-1">Spicy Arrabiata Penne</h1>
 					<div class="card-chips">
-						<span class="chip lime-100 stone-900-text">Vegetarian</span>
-						<span class="chip yellow-100 stone-900-text">Italian</span>
+						<span id="Vege-no" class="chip lime-100 stone-900-text">Vegetarian</span>
+						<span id="Region" class="chip yellow-100 stone-900-text">Italian</span>
 					</div>
 					<h2 class="text-preset-2 brown-800-text">Ingredients</h2>
-					<table class="card-ingredients-table">
-						<tbody>
+					<table id="table" class="card-ingredients-table">
+						<tbody class="CardIngredientsList">
 							<tr>
 								<th scope="row">
 									<span class="stone-600-text">Penne rigate</span>
@@ -114,7 +115,7 @@
 						</tbody>
 					</table>
 					<h2 class="text-preset-2 brown-800-text">Instructions</h2>
-					<ul class="card-instructions-list">
+					<ul id="ListeInstruction" class="card-instructions-list">
 						<li>
 							<span class="stone-600-text text-preset-body">
 								Bring a large pot of water to a boil. Add kosher salt to the
